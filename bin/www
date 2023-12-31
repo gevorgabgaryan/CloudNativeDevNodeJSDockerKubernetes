@@ -4,9 +4,12 @@
  * Module dependencies.
  */
 
+var dotenv = require('dotenv')
 var app = require('../app');
 var debug = require('debug')('myapp:server');
 var http = require('http');
+
+dotenv.config()
 
 /**
  * Get port from environment and store in Express.
